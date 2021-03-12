@@ -24,5 +24,5 @@ jobs:
           wget https://github.com/terraspanner/terraspanner-cli/releases/download/latest/terraspanner
           chmod +x ./terraspanner
           terraform plan
-          ./terraspanner plan
+          ./terraspanner tf plan
         
