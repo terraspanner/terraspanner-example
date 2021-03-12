@@ -5,6 +5,18 @@ terraform {
   required_version = ">= 0.12.26"
 }
 
-output "hello_world" {
-  value = "Hello, World!"
+provider "null" {
+  # Configuration options
+}
+
+resource "null_resource" "one" {
+  provisioner "local-exec" {
+    command = "echo hello one"
+  }
+}
+
+resource "null_resource" "two" {
+  provisioner "local-exec" {
+    command = "echo hello two"
+  }
 }
